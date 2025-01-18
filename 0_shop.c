@@ -3,9 +3,11 @@ int main() {
 int choice,quantity;
 float total=0,price,discount,final_total;
 printf("Welcome to the Shopping Cart System!\n");
+  
 do {
 printf("1. Add Product\n2. Show Total\n3. Apply Discount\n4. Remove Product\n5. Show Final Total\n6. Generate Receipt\n7. Exit\nEnter choice: ");
 scanf("%d",&choice);
+  
 switch(choice) {
 case 1: 
 printf("Enter product price: ");
