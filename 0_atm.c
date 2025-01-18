@@ -2,6 +2,7 @@
 int main() {
 int pin=1234,entered_pin,choice;
 float balance=1000.0,withdraw,deposit;
+  
 printf("Welcome to the ATM!\n");
 printf("Enter PIN: ");
 scanf("%d",&entered_pin);
@@ -9,9 +10,11 @@ if(entered_pin!=pin) {
 printf("Invalid PIN\n");
 return 0;
 }
+  
 do {
 printf("1. Balance Inquiry\n2. Cash Withdrawal\n3. Deposit Money\n4. Change PIN\n5. Transfer Funds\n6. Mini Statement\n7. Exit\nEnter choice: ");
 scanf("%d",&choice);
+  
 switch(choice) {
 case 1: 
 printf("Balance: $%.2f\n",balance);
